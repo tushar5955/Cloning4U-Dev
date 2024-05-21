@@ -13,7 +13,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///chat_data.db'  # SQLite datab
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 api_key = ''
-client = OpenAI(api_key= '')
+client = OpenAI(api_key= api_key)
 chatbot = AssistantRunner(client)
 
 # Define your database model
