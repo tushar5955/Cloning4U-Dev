@@ -2,7 +2,8 @@ import time
 class AssistantRunner:
     def __init__(self, client):
         # Initialize assistant in constructor
-        self.assistant = client.beta.assistants.retrieve("asst_nf5teRE1VEtOBCil0i58TzKz")
+        assistant_id = ''
+        self.assistant = client.beta.assistants.retrieve(assistant_id)
         self.client = client
 
     def run_assistant(self, thread_id):
@@ -26,7 +27,7 @@ class AssistantRunner:
         return new_message
 
     def reply(self, message, thread=None):
-        thread_id = "thread_MY3q8egNSv4EJ63vPCEDAX0R"
+        thread_id = ""
         message = self.client.beta.threads.messages.create(
         thread_id=thread_id,
         role="user",
