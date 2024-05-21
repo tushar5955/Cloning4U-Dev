@@ -5,6 +5,7 @@ class AssistantRunner:
         assistant_id = ''
         self.assistant = client.beta.assistants.retrieve(assistant_id)
         self.client = client
+        ####
 
     def run_assistant(self, thread_id):
     # Run the assistant using pre-initialized assistant
