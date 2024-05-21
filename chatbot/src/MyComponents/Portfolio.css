@@ -1,0 +1,57 @@
+.my-container-p {
+     /* Add padding around the container */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+.my-row-p{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.my-col-p{
+    padding-top: 2px;
+    margin-bottom: 10px;
+
+}
+
+.my-card-p {
+    height: auto;
+    background: linear-gradient(to bottom right,rgba(37,53,105, 0.945), #000000); /* Dark night sky gradient */
+    color: #c0c0c0; /* Silver bright stars color for text */
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for 3D effect */
+    margin-bottom: 10px;
+    }
+
+/* Image styling */
+.my-card-p img {
+    width: auto; /* Ensure image fills card width */
+    height: auto; /* Maintain aspect ratio */
+  }
+/* For screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+    .my-row-p {
+        height: auto; /* Adjust height for mobile view */
+        margin-top: 20px; /* Smaller margin for mobile */
+    }
+
+    .my-col-p {
+        padding-top: 10px; /* Adjust padding for mobile */
+    }
+
+    .my-card-p {
+        height: auto; /* Adjust height for mobile view */
+    }
+}
+
+/* Applying different gradient for even cards */
+.my-card-p:nth-child(even) {
+    background: linear-gradient(to bottom left, rgba(37,53,105, 0.945), #000000); /* Dark night sky gradient for even cards */
+}
+
+

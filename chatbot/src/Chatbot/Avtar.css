@@ -1,0 +1,17 @@
+.Avtar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes it rounded */
+    color: #949bff; /* Change the icon color to your desired color */
+    font-size: 24px; /* Adjust the icon size as needed */
+  }
+  
+  .Avtar svg {
+    width: 70%;
+    height: 70%;
+  }
+  
+  

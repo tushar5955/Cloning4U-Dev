@@ -1,0 +1,74 @@
+.row{
+    height:100vh;
+    
+}
+
+.contact-form-dark-theme {
+    padding-top: 17%;
+    border-radius: 8px;
+    width: auto;
+    
+   }
+
+
+  
+  .form-control {
+    background: linear-gradient(to bottom right,rgba(37,53,105, 0.945), #000000);
+    border-color: transparent; /* Remove default border */
+    color: #f8f9fa; /* Light text color */
+    ;
+  }
+  
+  
+  
+  .form-control::placeholder {
+    color: #d8dee433; /* White-grey placeholder text */
+  }
+  
+  textarea.form-control {
+    resize: auto; /* Disable textarea resize for cleaner look */
+  }
+  
+.address{
+    height: auto;
+    width: auto;
+    padding-top : 40%;
+    margin-left: 0px;
+}
+
+.address-item{
+    background: rgba(37,53,105, 0.945);
+    margin-top: 1px;
+    margin-right: 0;
+    border-color: transparent;
+    color: #8470a7;
+}
+
+
+.icon{
+    color: #949bff
+}
+
+.container-fluid {
+    background-image: url("../dialogBoxV2.png");
+    background-position: bottom right; /* Position at bottom right corner */
+    background-repeat: no-repeat;
+    background-size: 20%; /* Adjust the size of the image */
+    background-attachment: fixed;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .contact-form-dark-theme {
+        padding-top: 25%;
+        border-radius: 8px;
+        width: auto;
+        
+       }
+       .address{
+        height: auto;
+        width: auto;
+        padding-top : 5%;
+        margin-left: 0px;
+    }
+  }
+  

@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* Setting the background color to blue */
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, #001020, #002040, #003060, #004080);
+
+  
+}
+/* Style the about container */
+/* Styling for the card container */
+
+.about-container {
+  width: 100%; /* Ensure it takes the full width */
+  height: 100vh;
+}
+
+.row {
+  display: flex; /* Use flexbox for row layout */
+  height: 100%;
+  padding: 0;
+  margin:0;
+}
+
+.col-1 {
+  position: relative;
+  flex: 0 0 70%; /* Flex basis of 30% */
+  margin: 0;
+  padding: 0;
+}
+
+.col-2 {
+  position: relative;
+  flex: 0 0 30%; /* Flex basis of 70% */
+  margin: 0;
+  padding: 0;
+}
+
+.about-left {
+  position: absolute;
+  bottom: 20%; /* Adjust as needed */
+  right: -5%; /* Adjust as needed */
+  padding: 0;
+  margin:0;
+  /* Additional styles for positioning or appearance */
+}
+/* Style the profile photo to take up the full row and 40% height of the screen */
+.profile-photo {
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+  width: 100%;
+  height: 75%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .about-left {
+    position: absolute;
+    bottom: 15%; /* Adjust as needed */
+    right: -5%; /* Adjust as needed */
+    padding: 0;
+    margin:0;
+    /* Additional styles for positioning or appearance */
+  }
+
+  .profile-photo {
+    position: absolute;
+    bottom: 100px;
+    right: 5px;
+    width: 100%;
+    height: 25%;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* Setting the background color to blue */
+  min-height: 100vh;
+  width: 100vw;
+}
+/* Style the about container */
+/* Styling for the card container */
+
+.container {
+  width: 100vw; /* Ensure it takes the full width */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+
+.dialog-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.row {
+  display: flex; /* Use flexbox for row layout */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.col-left {
+  flex: 0 0 70%; /* Flex basis of 30% */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.col-right {
+  flex: 0 0 30%; /* Flex basis of 70% */
+  margin: 0;
+  padding: 0;
+
+}
+
+.Chatbot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.react-chatbot-kit-chat-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+width: 300px;
+margin-left: 5px;
+  }
+
+.react-chatbot-kit-chat-message-container {
+  background-color: transparent; /* Set the background to fully transparent */
+}
+.react-chatbot-kit-chat-bot-avatar-container {
+  background-color: transparent;
+} 
+.react-chatbot-kit-chat-inner-container {
+  height: 500px;
+  background-color: transparent;
+}
+  
+
+/* Your existing CSS */
+
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .dialog-box {
+    width: 100%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove the maximum width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .row {
+    width: 100%; /* Change to a column layout on smaller screens */
+  }
+
+  .Chatbot {
+    display: block; /* Hide the Chatbot by default */
+  }
+
+  /* Show the Chatbot only on small screens */
+  .react-chatbot-kit-chat-container {
+    display: block; /* Show the Chatbot container */
+    position: fixed;
+    bottom: 0px; /* Adjust bottom distance */
+    right: 0px; /* Adjust right distance */
+    max-width: 80%; /* Limit the width if needed */
+    width: auto; /* Let the content define the width */
+    height: 50%;
+    background-color: bisque;
+  }
+ 
+}
+
+
+

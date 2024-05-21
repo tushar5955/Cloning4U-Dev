@@ -1,0 +1,11 @@
+# Ignore folderA inside parent1
+backend/.venv/
+
+# Ignore folderB inside parent2
+backend/instance/
+
+backend/__pycache__/
+
+backup/
+
+chatbot/node_modules

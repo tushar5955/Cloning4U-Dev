@@ -1,0 +1,77 @@
+/* Specific styles for the card containing Tushar Burade's information */
+.tushar-card {
+  width: 50vw;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  background: radial-gradient(circle at 50% 50%, #000000 0%, transparent 70%);
+  border-radius: 10px;
+  box-shadow: none;
+  transform: perspective(1000px) rotateY(10deg);
+  border: 3px solid #4da0d6;
+}
+
+/* Card header styles */
+.tushar-card .card-header {
+  margin-bottom: 20px;
+  color: #a3aab8;
+}
+
+.tushar-card .card-header h2 {
+  margin: 0;
+}
+
+/* Card body styles */
+.tushar-card .card-body p {
+  margin-bottom: 10px;
+  color: #bcc5d6;
+}
+
+/* Tail styles */
+.tushar-card::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -20px;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  transform: rotate(300deg) skewX(-10deg);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .tushar-card {
+    width: 80%;
+    margin-left: 20px;
+    padding: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: transparent;
+    background: radial-gradient(circle at 50% 50%, #000000 0%, transparent 70%);
+    border-radius: 10px;
+    box-shadow: none;
+    transform: perspective(1000px) rotateY(10deg);
+    border: 1px solid #4da0d6;
+  }
+
+  .tushar-card .card-header {
+    margin-bottom: 8px;
+    font-size: x-small;
+  }
+
+  .tushar-card .card-body p {
+    margin-bottom: 8px;
+    font-size: x-small;
+  }
+
+  .tushar-card::before {
+    bottom: -5px;
+    right: -10px;
+    border-width: 8px 8px 0;
+    transform: rotate(300deg) skewX(-8deg);
+  }
+}
