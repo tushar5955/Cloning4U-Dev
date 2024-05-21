@@ -12,7 +12,8 @@ CORS(app)  # Enable CORS for all routes
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///chat_data.db'  # SQLite database URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-client = OpenAI(api_key= 'sk-proj-xt8CdEFDNHb2Ur6AVI1LT3BlbkFJoZZqG7XmSCwPjX4mHDDp')
+api_key = 'sk-proj-xt8CdEFDNHb2Ur6AVI1LT3BlbkFJoZZqG7XmSCwPjX4mHDDp'
+client = OpenAI(api_key= api_key)
 chatbot = AssistantRunner(client)
 
 # Define your database model
